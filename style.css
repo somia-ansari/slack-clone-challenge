@@ -1,10 +1,15 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+body {
+    padding: 0;
+    margin: 0;
+}
 nav {
     background-color: #3f0e40;
-    color: #987d99;
+    color: #ad9aaf;
     padding: 10px;
+    padding-left: 15px;
 }
 ul {
     list-style-type: none;
@@ -14,10 +19,15 @@ ul {
 div#search input {
     background-color: #260027;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 10px;
+    background-image: url(images/jump-to.JPG);
+    background-position: 5px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    color: #a893a9;
 }
 body {
     display: flex;
@@ -29,7 +39,7 @@ padding: 0;
 margin: 0;
 }
 div#user-name>i {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
     padding: 0;
 }
@@ -37,25 +47,30 @@ div#user-name h1 {
     color: white;
     padding: 0;
     margin: 0;
+    font-size: 1.2em;
 }
 div#user-name h1 i {
-    font-size: 0.5em;
+    font-size: 0.4em;
+    color: #987d99;
 }
 div#top h2 i {
     color: #38948b;
-    font-size: 0.5em;
+    font-size: 0.6em;
     padding: 0;
     margin: 0;
+    margin-right: 4px;
 }
 div#top h2 {
     font-weight: 100;
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 0;
     margin: 0;
-
+    color: #a893a9;
 }
+
 main {
-    padding: 15px;
+    padding: 10px 15px;
+    width: 100%;
 }
 header div h1 {
     padding: 0;
@@ -63,6 +78,7 @@ header div h1 {
 }
 div#direct-msg i {
     color: #2bac76;
+    font-size: 0.7em;
 }
 li#inactive i {
     color:#896b89;
@@ -77,6 +93,10 @@ div#channel-heading {
 div#channel-heading h1 {
     font-size: 1em;
     font-weight: 400;
+    margin: 5px 0px;
+}
+#channel-list li i{
+    font-size: 0.7em;
 }
 div#drct-msg-heading {
     display: flex;
@@ -89,18 +109,35 @@ div#drct-msg-heading {
 div#drct-msg-heading h1 {
     font-size: 1em;
     font-weight: 400;
+    margin: 20px 0px 5px 0;
 }
 div#drct-msg-heading i {
     color: #987d99;
+    margin: 20px 0px 5px 0;
+    font-size: 1em;
 }
 nav li i{
     margin-right: 5px;
     font-weight: lighter;
 }
+nav li {
+    margin: 7px auto;
+}
+li#selected {
+    color: white;
+    background-color:#1164a3;
+    padding: 3px 0;
+}
 h1#thread {
     font-size: 1em;
-    color: white;
-
+    color: #a893a9;
+    font-weight: lighter;
+}
+#direct-msg li span{
+    color: #896b89af;
+}
+li#inactive {
+    color: #896b89af;
 }
 h1#thread i{
     color: #987d99;
@@ -112,4 +149,39 @@ div#app-heading {
     margin: 0;
     padding: 0;
     align-items: center;
+}
+div#app-heading h1 {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+div#app-list li i{
+    font-size: 0.6em;
+}
+div#top {
+    position: sticky;
+    top: 0;
+    background-color: #3f0e40;
+}
+div.hr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #1d1c1d;
+}
+div.hr hr{
+    width: 40%;
+    color: grey;
+}
+header{
+    color: #616061;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    color: black;
+    font-size: 1.2em;
+    font-weight: bolder;
 }
