@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Slack Clone</title>
+</head>
+
+<body>
+    <nav>
+        <div id="top">
+            <div id="user-name">
+                <h1>
+                    tk-2019 <i class="fas fa-chevron-down"></i>
+                </h1>
+                <i class="far fa-bell"></i>
+            </div>
+            <h2>
+                <i class="fas fa-circle"></i>
+                Somiaansari
+            </h2>
+        </div>
+        <div id="search">
+            <input type="search" placeholder="Jump-to...">
+        </div>
+        <h1 id="thread"><i class="fas fa-comment-dots"></i>Threads</h1>
+        <div id="channel-list">
+            <div id="channel-heading">
+                <h1>Channels</h1>
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <ul>
+                <li><i class="fas fa-hashtag"></i>announcements</li>
+                <li><i class="fas fa-hashtag"></i><strong>attendance</strong></li>
+                <li><i class="fas fa-hashtag"></i>chat</li>
+                <li id="selected"><i class="fas fa-hashtag"></i>class-resources</li>
+                <li><i class="fas fa-hashtag"></i>freecodecamp</li>
+                <li><i class="fas fa-hashtag"></i>general</li>
+                <li><i class="fas fa-hashtag"></i>life-skills</li>
+                <li><i class="fas fa-hashtag"></i>mentor-meetups</li>
+                <li><i class="fas fa-hashtag"></i>student-showcase</li>
+                <li><i class="fas fa-hashtag"></i>techninjakhairunnisa</li>
+                <li><i class="fas fa-lock"></i>tk-girls</li>
+                <li><i class="fas fa-hashtag"></i>web-dev</li>
+            </ul>
+        </div>
+        <div id="direct-msg">
+            <div id="drct-msg-heading">
+                <h1>Direct Messages</h1>
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <ul>
+                <li><i class="fas fa-heart"></i> Slackbot</li>
+                <li>
+                    <i class="fas fa-circle"></i>
+                    Somiaansari <span>(you)</span>
+                </li>
+                <li id="inactive"><i class="far fa-circle"></i>Sarah Ahmed</li>
+            </ul>
+        </div>
+        <div id="app-list">
+            <div id="app-heading">
+                <h1>Apps</h1>
+                <i class="fas fa-plus-circle"></i>
+            </div>
+
+                <ul>
+                    <li><i class="fas fa-plus"></i>Connect Google Drive</li>
+                    <li><i class="fas fa-plus"></i>Add apps</li>
+                </ul>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div>
+                <h1>#class-resources</h1>
+                <p><i class="far fa-star"></i><span><i class="far fa-user"></i>116</span><span><i
+                            class="fas fa-thumbtack"></i>0</span><span><i class="fas fa-pencil-alt"></i>Add a
+                        topic</span></p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-info-circle"></i>
+                <i class="fas fa-cog"></i>
+                <input type="search" placeholder="Search">
+                <i class="fas fa-at"></i>
+                <i class="far fa-star"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </header>
+        <section>
+            <div class="hr">
+                <hr>
+                <span>Monday, May 20th</span>
+                <hr>
+            </div>
+            <div id="users">
+                <img src="images/dp (1).jpg" alt="Kokab">
+                <img src="images/dp-2.png" alt="Aleem">
+            </div>
+            <div id="content">
+                <div id="kokab-post">
+                    <h1>syeda kukab <i class="far fa-comment-alt"></i><span>4:27 PM</span></h1>
+                    <p>dark code</p>
+                    <a href="#">https://youtu.be/Q2MBjwlsNy0</a>
+                    <div id="video">
+                        <i class="fab fa-youtube"></i>
+                        Youtube <span>DarkCode</span>
+                        <figure>
+                            <figcaption>Image Hover Effect - Slide in Overlay from the Left
+                                <sup><i class="fas fa-sort-down"></i></sup>
+                            </figcaption>
+                            <img src="images/download.jpg" alt="">
+                            <div id="opt">
+                                <i class="fas fa-play"></i>
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </figure>
+                    </div>
+                    <h1>Syed Aleem Hussain<span>5:33 PM</span></h1>
+
+                </div>
+                <div id="message">
+                    <i class="far fa-plus-square"></i><input type="search" placeholder="Message #class-resources">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

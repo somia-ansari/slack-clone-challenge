@@ -1,0 +1,115 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    background-color: #3f0e40;
+    color: #987d99;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div#search input {
+    background-color: #260027;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+body {
+    display: flex;
+}
+div#user-name {
+display: flex;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+}
+div#user-name>i {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+div#user-name h1 {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+div#user-name h1 i {
+    font-size: 0.5em;
+}
+div#top h2 i {
+    color: #38948b;
+    font-size: 0.5em;
+    padding: 0;
+    margin: 0;
+}
+div#top h2 {
+    font-weight: 100;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+
+}
+main {
+    padding: 15px;
+}
+header div h1 {
+    padding: 0;
+    margin: 0;
+}
+div#direct-msg i {
+    color: #2bac76;
+}
+li#inactive i {
+    color:#896b89;
+}
+div#channel-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+div#channel-heading h1 {
+    font-size: 1em;
+    font-weight: 400;
+}
+div#drct-msg-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+}
+div#drct-msg-heading h1 {
+    font-size: 1em;
+    font-weight: 400;
+}
+div#drct-msg-heading i {
+    color: #987d99;
+}
+nav li i{
+    margin-right: 5px;
+    font-weight: lighter;
+}
+h1#thread {
+    font-size: 1em;
+    color: white;
+
+}
+h1#thread i{
+    color: #987d99;
+    margin-right: 5px;
+}
+div#app-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
