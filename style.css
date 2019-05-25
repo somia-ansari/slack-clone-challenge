@@ -179,9 +179,157 @@ header{
     top: 0;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    align-items: center;
 }
 header h1{
     color: black;
     font-size: 1.2em;
     font-weight: bolder;
+}
+header input {
+    background-image: url(images/49116.png);
+    padding: 6px;
+    border-radius: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 28px;
+    padding-right: 0px;
+    border: 1px solid gray;
+}
+header i {
+    margin: 0px 5px;
+    color: grey;
+}
+header div p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+div#chat-body {
+    display: flex;
+}
+div#users{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#users img {
+    height: 36px;
+    border-radius: 3px;
+}
+#kokab-post h1{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+#kokab-post h1 i {
+    font-size: 0.9em;
+    margin: 0 5px;
+}
+#kokab-post h1 span{
+    color: grey;
+    font-size: 0.7em;
+    font-weight: 100;
+}
+#kokab-post p{
+    margin: 4px 0 10px;
+}
+#kokab-post a{
+    text-decoration: none;
+    color:#1264a3;
+
+}
+#kokab-post div#video i{
+    color: #d42322;
+}
+#video {
+    border-left: 4px solid lightgray;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#video p{
+    margin:4px 0;
+}
+#video p span{
+    border-left: 2px solid lightgray;
+    padding-left: 8px;
+    margin-left: 5px;
+}
+#video figure{
+    margin: 0;
+    position: relative;
+}
+#video figcaption{
+    color:#1264b8;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+    font-size: 0.9em;
+}
+#kokab-post #video figcaption i {
+    color: #1264b8;
+}
+div#opt {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    height: 20%;
+    font-size: 3em;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #00000059;
+    border-radius: 5px;
+}
+#kokab-post #video div#opt i{
+    color: #ffffff75;
+}
+#kokab-post h1#aleem{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#aleem span{
+    margin-left: 5px;
+}
+#video+button{
+    border-radius: 12px;
+    border: 0.1px solid;
+    color: #1264a3;
+    background-color: #e8f5fa;
+    box-shadow: inset 0 0 0 1px #1d9bd1;
+    padding: 4px 6px;
+    margin-top: 5px;
+}
+#video+button i {
+    color:#82b14b;
+}
+div#message{
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    margin-top: 20px;
+}
+div#message input{
+    flex:1;
+    border: none;
+    border-left: 2px solid lightgray;
+    padding-left: 5px;
+}
+#message input~i{
+    color:#61646a;
+}
+#message i{
+    margin:5px;
+    color:gray;
+    font-size: 1.2em;
+    
+}
+#kokab-post{
+    padding-left: 8px;
+    margin-bottom: auto;
 }
