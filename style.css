@@ -131,6 +131,8 @@ nav li i{
 }
 nav li {
     margin: 7px auto;
+    display: flex;
+    align-items: center;
 }
 li#selected {
     color: white;
@@ -183,6 +185,15 @@ div.hr hr{
     flex: 1;
     color: grey;
 }
+div#center{
+    display: flex;
+    
+}
+#pageview{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 header{
     color: #616061;
     position: sticky;
@@ -193,6 +204,7 @@ header{
     justify-content: space-between;
     background-color: white;
     align-items: center;
+    border-bottom: 1px solid lightgray;
 }
 header h1{
     color: black;
@@ -263,9 +275,6 @@ div#users{
 }
 #video p{
     margin:4px 0;
-}
-#video img{
-    width: 100%;
 }
 #video p span{
     border-left: 2px solid lightgray;
@@ -369,6 +378,51 @@ section#channel-details nav{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+
+}
+#channel-details{
+    border: 1px solid lightgray;
+    width: 38%;
+}
+#channel-details summary{
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+#channel-details details i {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+#channel-details details p,h2{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    font-size: 18px;
+}
+#channel-details h3{
+    color: #616061;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+#channel-details a{
+    color: #1264a3;
+    text-decoration: none;
+}
+#channel-details a~a{
+    color: #1d1c1d;
+}
+#channel-details details li{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    color: #616061;
+}
+#channel-details details a{
+    color:#1d1c1d;
+}
+#channel-details details{
+border: 1px solid lightgray;
 
 }
 @media screen and (min-width:426px) and (max-width:768px) {
