@@ -9,6 +9,7 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="icon" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Slack Clone</title>
@@ -96,7 +97,7 @@
                 <i class="fas fa-ellipsis-v"></i>
             </div>
         </header>
-        <section>
+        <section id="selected-channel">
             <div class="hr">
                 <hr>
                 <span>Monday, May 20th</span>
@@ -104,11 +105,11 @@
             </div>
             <div id="chat-body">
                 <div id="users">
-                    <img src="images/dp (1).jpg" alt="Kokab">
+                    <img src="images/dp-1.jpg" alt="Kokab">
                     <img src="images/dp-2.png" alt="Aleem">
                 </div>
                 <div id="kokab-post">
-                    <h1>syeda kukab <i class="far fa-comment-alt"></i><span>4:27 PM</span></h1>
+                    <h1>syeda kukab <i class="far fa-comment-alt"></i><time>4:27 PM</time></h1>
                     <p>dark code</p>
                     <a href="#">https://youtu.be/Q2MBjwlsNy0</a>
                     <div id="video">
@@ -126,7 +127,9 @@
                         </figure>
                     </div>
                     <button><i class="fas fa-check"></i> 1</button>
-                    <h1 id="aleem">Syed Aleem Hussain<span>5:33 PM</span></h1>
+                    <h1 id="aleem">Syed Aleem Hussain<time>5:33 PM</time></h1>
+                    <p>Absolute se nhi horha</p>
+
                 </div>
             </div>
             <div id="message">
@@ -135,7 +138,19 @@
                 <i class="far fa-smile"></i>
             </div>
         </section>
+        
     </main>
+    <section id="channel-details">
+            <nav><h1>About #class-resources</h1> <i class="fas fa-times"></i></nav>
+            <details>
+                <summary>
+                    <i class="fas fa-info-circle"></i>
+                </summary>
+
+
+                
+            </details>
+        </section>
 
 
 </body>

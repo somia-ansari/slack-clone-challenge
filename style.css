@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 body {
     padding: 0;
@@ -10,6 +10,15 @@ nav {
     color: #ad9aaf;
     padding: 10px;
     padding-left: 15px;
+    height: 100vh;
+    display: block;
+    overflow: scroll;
+    flex-basis: 220px;
+    flex-shrink: 0;
+    min-width: 1px;
+    max-width: 260px;
+    line-height: 1.2rem;
+    font-size: 14px;
 }
 ul {
     list-style-type: none;
@@ -170,7 +179,8 @@ div.hr {
     color: #1d1c1d;
 }
 div.hr hr{
-    width: 40%;
+
+    flex: 1;
     color: grey;
 }
 header{
@@ -178,6 +188,8 @@ header{
     position: sticky;
     top: 0;
     display: flex;
+    z-index: 1;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: white;
     align-items: center;
@@ -226,7 +238,7 @@ div#users{
     font-size: 0.9em;
     margin: 0 5px;
 }
-#kokab-post h1 span{
+#kokab-post h1 time{
     color: grey;
     font-size: 0.7em;
     font-weight: 100;
@@ -251,6 +263,9 @@ div#users{
 }
 #video p{
     margin:4px 0;
+}
+#video img{
+    width: 100%;
 }
 #video p span{
     border-left: 2px solid lightgray;
@@ -287,11 +302,21 @@ div#opt {
 #kokab-post #video div#opt i{
     color: #ffffff75;
 }
-#kokab-post h1#aleem{
-    margin-top: 20px;
-    margin-bottom: 20px;
+#kokab-post #video div#opt:hover i {
+    color: #ffffffcc;
+
 }
-#aleem span{
+#kokab-post #video div#opt i:hover{
+    cursor: pointer;
+}
+
+#kokab-post h1#aleem{
+    margin-top: 10px;
+}
+h1#aleem+p{
+    margin: 4px 0 0;
+}
+#aleem time{
     margin-left: 5px;
 }
 #video+button{
@@ -310,9 +335,10 @@ div#message{
     border: 3px solid lightgray;
     border-radius: 5px;
     display: flex;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     margin-top: 20px;
+    width: 80%;
 }
 div#message input{
     flex:1;
@@ -332,4 +358,58 @@ div#message input{
 #kokab-post{
     padding-left: 8px;
     margin-bottom: auto;
+}
+section#channel-details nav{
+    height: auto;
+    background-color: #f8f8f8;
+    color: #1d1c1d;
+    font-weight: 900;
+    display: flex;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+@media screen and (min-width:426px) and (max-width:768px) {
+    section#channel-details {
+    display: none;
+}
+main{
+    padding: 0;
+}    section#channel-details {
+    display: none;
+}
+main{
+    padding: 10px;
+    font-size:14px;
+}
+div.hr {
+    justify-content: space-around;
+
+}
+nav{
+    min-width: 1px;
+    max-width: 160px;
+    
+}
+div#message{
+    
+    width: 60%;
+}
+}
+@media screen and (min-width:100px) and (max-width:425px) {
+    
+    section#channel-details {
+    display: none;
+}
+main{
+    padding: 10px;
+    font-size: 14px;
+}
+
+nav{
+    display: none;
+}
+
 }
